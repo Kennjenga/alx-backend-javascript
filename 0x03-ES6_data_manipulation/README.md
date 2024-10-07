@@ -61,3 +61,18 @@ let obj = {};
 weakMap.set(obj, "some value");
 console.log(weakMap.get(obj)); // Output: some value
 ```
+
+## ArrayBuffer
+
+An ArrayBuffer is a raw binary data buffer that can be used to represent large binary data. It is a fixed-size container that holds a raw binary data buffer.
+
+Example:
+
+```javascript
+let buffer = new ArrayBuffer(16);
+const dataView = new DataView(buffer);
+dataView.setInt8(0, 255);
+console.log(new Uint8Array(buffer)[0]); // Output: 255
+```
+
+This code creates an ArrayBuffer of size 16 bytes, creates a DataView object to manipulate the buffer, sets the first byte to 255, and then logs the value of the first byte to the console. The ArrayBuffer is a useful data structure for working with large binary data in JavaScript.
