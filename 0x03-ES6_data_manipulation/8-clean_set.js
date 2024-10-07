@@ -9,6 +9,9 @@ export default function cleanSet(set, prefix) {
   }
 
   //   Remove the prefix from each item in the set and join them with '-'
-  //   Return the new string as the result
-  return [...set].filter((item) => item.startsWith(prefix)).join('-');
+
+  return [...set]
+    .filter((item) => item.startsWith(prefix))
+    .map((item) => item.replace(prefix, ''))
+    .join('-');
 }
