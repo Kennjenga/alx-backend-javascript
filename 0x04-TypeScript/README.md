@@ -1,6 +1,10 @@
 # Summary
 
 `cp .eslintrc.js package.json tsconfig.json webpack.config.js ./task_0    `
+To run:  
+`tsc main.ts`
+To install globally:  
+`sudo npm install -g typescript`
 
 ## Basic Types in TypeScript
 
