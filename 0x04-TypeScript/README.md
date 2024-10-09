@@ -1,8 +1,8 @@
 # Summary
 
-`cp .eslintrc.js package.json tsconfig.json webpack.config.js ./task_0    `
+`cp .eslintrc.js package.json tsconfig.json webpack.config.js ./task_0    `  
 To run:  
-`tsc main.ts`
+`tsc main.ts`  
 To install globally:  
 `sudo npm install -g typescript`
 
