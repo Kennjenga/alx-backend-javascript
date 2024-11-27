@@ -12,6 +12,7 @@ const countStudents = (dataPath) =>
         reject(new Error("Cannot load the database"));
       }
       if (data) {
+        // console.log(data);
         const fileLines = data.toString("utf-8").trim().split("\n");
         const studentGroups = {};
         const dbFieldNames = fileLines[0].split(",");
